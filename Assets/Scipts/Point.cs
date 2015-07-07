@@ -87,7 +87,8 @@ public class Point : MonoBehaviour {
 		
 		}
 		if (CheckWin ())
-			Win.transform.position = new Vector3 (0, 0, -0.5f);
+			//Win.transform.position = new Vector3 (0, 0, -0.5f);
+			Application.LoadLevel (1);
 	}
 
 	// Update is called once per frame
