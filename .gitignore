@@ -17,6 +17,10 @@
 !Library/unity editor resources
 !Library/metadata/
 !Library/assetDatabase3
+!Library/AssetImportState
+
+!Library/AssetServerCacheV3
+!Library/AssetVersioning.db
 sysinfo.txt
  
 # ===================================== #
