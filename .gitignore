@@ -4,23 +4,23 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild
-[Ll]ibrary/*
-!Library/*.asset
-!Library/AssetImportState
-!Library/AssetVersioning.db
-!Library/BuildPlayer.prefs
-!Library/ScriptMapper
-!Library/assetservercachev3
-!Library/expandedItems
-!Library/guidmapper
-!Library/unity default resources
-!Library/unity editor resources
-!Library/metadata/
-!Library/assetDatabase3
-!Library/AssetImportState
+#[Ll]ibrary/*
+#!Library/*.asset
+#!Library/AssetImportState
+#!Library/AssetVersioning.db
+#!Library/BuildPlayer.prefs
+#!Library/ScriptMapper
+#!Library/assetservercachev3
+#!Library/expandedItems
+#!Library/guidmapper
+#!Library/unity default resources
+#!Library/unity editor resources
+#!Library/metadata/
+#!Library/assetDatabase3
+#!Library/AssetImportState
 
-!Library/AssetServerCacheV3
-!Library/AssetVersioning.db
+#!Library/AssetServerCacheV3
+#!Library/AssetVersioning.db
 sysinfo.txt
  
 # ===================================== #
