@@ -22,6 +22,7 @@
 #!Library/AssetServerCacheV3
 #!Library/AssetVersioning.db
 sysinfo.txt
+*.meta
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -46,3 +47,6 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 [Tt]humbs.db
+C:
+Z:
+sln_name_of_last_monodevelop_call

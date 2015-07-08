@@ -36,29 +36,46 @@ public class Point : MonoBehaviour {
 
 	int CheckWinMainDiagonal (int player) {
 		int amount = 1;
-		for (int i = xPos + 1; i < Board.wField && Board.map[i,yPos] == player; i++)
-			for (int j = yPos + 1; j < Board.hField && Board.map[xPos,j] == player; j++)
-				amount++;
+		int i = xPos + 1;
+		int j = yPos + 1;
+		while (i < Board.wField && j < Board.hField && Board.map[i,j] == player) {
+			amount++;
+			i++;
+			j++;
+		}
 
-		for (int i = xPos - 1; i > 0 && Board.map[i,yPos] == player; i--)
-			for (int j = yPos - 1; j > 0 && Board.map[xPos,j] == player; j--)
-				amount++;
+		i = xPos - 1;
+		j = yPos - 1;
+		while (i > 0 && j > 0 && Board.map[i,j] == player) {
+			amount++;
+			i--;
+			j--;
+		}
 		return amount;
 	}
 
 	int CheckWinSecDiagonal (int player) {
 		int amount = 1;
-		for (int i = xPos - 1; i > 0 && Board.map[i,yPos] == player; i--)
-			for (int j = yPos + 1; j < Board.hField && Board.map[xPos,j] == player; j++)
-				amount++;
+		int i = xPos - 1;
+		int j = yPos + 1;
+		while (i > 0 && j < Board.hField && Board.map[i,j] == player) {
+			amount++;
+			i--;
+			j++;
+		}
 
-		for (int i = xPos + 1; i < Board.wField && Board.map[i,yPos] == player; i++)
-			for (int j = yPos - 1; j > 0 && Board.map[xPos,j] == player; j--)
-				amount++;
+		i = xPos + 1;
+		j = yPos - 1;
+		while (i < Board.wField && j > 0 && Board.map[i,j] == player) {
+			amount++;
+			i++;
+			j--;
+		}
 		return amount;
 	}
 
 	bool CheckWin() {
+
 		int player = Board.map[xPos,yPos];
 		if (CheckWinHorizontal(player) >= 5)
 			return true;
@@ -84,10 +101,9 @@ public class Point : MonoBehaviour {
 				Board.map[xPos, yPos] = Board.player;
 				Board.player = 1;
 			}
-		
 		}
+
 		if (CheckWin ())
-			//Win.transform.position = new Vector3 (0, 0, -0.5f);
 			Application.LoadLevel (1);
 	}
 
