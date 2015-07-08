@@ -58,7 +58,7 @@ MonoBehaviour:
   yPos: 0
   WhitePoint: {fileID: 21300000, guid: c836b944b2d8fb040984909e528cbf99, type: 3}
   BlackPoint: {fileID: 21300000, guid: 027d267861868fc43a1056ae40aa0aa1, type: 3}
-  Win: {fileID: 0}
+  WinText: {fileID: 165264, guid: c09de26c59281ef4b92a439055e4c1c0, type: 2}
 --- !u!212 &21236458
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -91,7 +91,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: WinText
+      value: 
+      objectReference: {fileID: 165264, guid: c09de26c59281ef4b92a439055e4c1c0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115930}

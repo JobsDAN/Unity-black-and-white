@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Point : MonoBehaviour {
@@ -18,15 +19,26 @@ public class Point : MonoBehaviour {
 		if (!active) {
 			active = true;
 			SpriteRenderer trigger = GetComponent <SpriteRenderer> ();
-			if (Map.currentPlayer == Map.Player.White)
+			Map.SetPoint(xPos, yPos); 
+			if (Map.currentPlayer == Map.Player.White) 
 				trigger.sprite = WhitePoint;
 			else
 				trigger.sprite = BlackPoint;
-
-			Map.SetPoint (xPos, yPos);
 		}
-		if (Map.CheckWin(xPos, yPos))
-			Application.LoadLevel (3);
+
+		Map.Player winner = Map.CheckWin (xPos, yPos);
+		if (winner != Map.Player.None) {
+			GameObject winTextObj = Instantiate (WinText);
+			Transform tmp = winTextObj.transform.Find("Text");
+			GameObject tmpObj = tmp.gameObject;
+			Text winText = tmpObj.GetComponent<Text>();
+			DontDestroyOnLoad (winTextObj);
+			if (winner == Map.Player.Black)
+				winText.text = "Черный победил";
+			else
+				winText.text = "Белый победил";
+			Application.LoadLevel(3);
+		}
 	}
 
 	// Update is called once per frame
