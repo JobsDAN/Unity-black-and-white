@@ -104,7 +104,7 @@ public class Point : MonoBehaviour {
 		}
 
 		if (CheckWin ())
-			Application.LoadLevel (1);
+			Application.LoadLevel (3);
 	}
 
 	// Update is called once per frame
