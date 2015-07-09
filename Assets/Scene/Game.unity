@@ -273,8 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0484735de07501341ba922524a0a1013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell: {fileID: 0}
-  background: {fileID: 0}
+  cell: {fileID: 115930, guid: 82a6f3dff67270b4f82a933ac88bfdaa, type: 2}
+  backSprite: {fileID: 21300000, guid: 250a153d9490ab348a1b86d06f665014, type: 3}
 --- !u!4 &1324028153
 Transform:
   m_ObjectHideFlags: 0
