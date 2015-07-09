@@ -51,14 +51,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 115930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7fd8cb32ad733049975ff1ff58b1de8, type: 3}
+  m_Script: {fileID: 11500000, guid: 65f339038a426e54a88adcdc8424aeb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xPos: 0
   yPos: 0
-  WhitePoint: {fileID: 21300000, guid: c836b944b2d8fb040984909e528cbf99, type: 3}
-  BlackPoint: {fileID: 21300000, guid: 027d267861868fc43a1056ae40aa0aa1, type: 3}
-  WinText: {fileID: 165264, guid: c09de26c59281ef4b92a439055e4c1c0, type: 2}
+  WhitePoint: {fileID: 21300000, guid: 3e337c23fbe61ad46a500346914e9f46, type: 3}
+  BlackPoint: {fileID: 21300000, guid: adf6b75aa89556242bac2a664fab01fb, type: 3}
+  WinText: {fileID: 165264, guid: a9ae88dbef51b2c4c9b813303fcedc2b, type: 2}
 --- !u!212 &21236458
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7606e7edc0254ed4ea9d2cf91295bd32, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c2ac7ef6d7c4974a80825979e84a6fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -95,7 +95,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: WinText
       value: 
-      objectReference: {fileID: 165264, guid: c09de26c59281ef4b92a439055e4c1c0, type: 2}
+      objectReference: {fileID: 165264, guid: a9ae88dbef51b2c4c9b813303fcedc2b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: WhitePoint
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e337c23fbe61ad46a500346914e9f46,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: BlackPoint
+      value: 
+      objectReference: {fileID: 21300000, guid: adf6b75aa89556242bac2a664fab01fb,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c2ac7ef6d7c4974a80825979e84a6fb,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115930}

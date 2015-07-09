@@ -271,10 +271,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1945289881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 040b7eb4ecfe9a247887bb72e375f318, type: 3}
+  m_Script: {fileID: 11500000, guid: ab3fee5aa24a1574ea919141da90c5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cell: {fileID: 115930, guid: 76d306a5591a59d419fcb454a9dda04d, type: 2}
+  cell: {fileID: 115930, guid: 82a6f3dff67270b4f82a933ac88bfdaa, type: 2}
 --- !u!212 &1945289883
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8fb4f448d921ad4498af26d7822c6812, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 250a153d9490ab348a1b86d06f665014, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1945289884
 Transform:
