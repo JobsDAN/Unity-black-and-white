@@ -3,8 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Point : MonoBehaviour {
-	public int xPos;
-	public int yPos;
+	public int x;
+	public int y;
 	public Sprite WhitePoint;
 	public Sprite BlackPoint;
 	public GameObject WinText;
@@ -23,10 +23,10 @@ public class Point : MonoBehaviour {
 				trigger.sprite = WhitePoint;
 			else
 				trigger.sprite = BlackPoint;
-			Game.Board.SetPoint(xPos, yPos);
+			Game.Board.SetPoint(x, y);
 		}
 
-		Game.Player winner = Game.Board.CheckWin (xPos, yPos);
+		Game.Player winner = Game.Board.CheckWin (x, y);
 		if (winner != Game.Player.None) {
 			GameObject winTextObj = Instantiate (WinText);
 			Transform tmp = winTextObj.transform.Find("Text");

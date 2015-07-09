@@ -45,8 +45,8 @@ public class Game : MonoBehaviour {
 				curCell.transform.position = new Vector2 (x0 + x, y0 + y);
 					
 				var p = curCell.GetComponent <Point> ();
-				p.xPos = i;
-				p.yPos = j;
+				p.x = i;
+				p.y = j;
 			}
 	}
 
