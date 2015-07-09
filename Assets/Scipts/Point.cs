@@ -19,11 +19,11 @@ public class Point : MonoBehaviour {
 		if (!active) {
 			active = true;
 			SpriteRenderer trigger = GetComponent <SpriteRenderer> ();
-			Map.SetPoint(xPos, yPos); 
 			if (Map.currentPlayer == Map.Player.White) 
 				trigger.sprite = WhitePoint;
 			else
 				trigger.sprite = BlackPoint;
+			Map.SetPoint(xPos, yPos);
 		}
 
 		Map.Player winner = Map.CheckWin (xPos, yPos);
