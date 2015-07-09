@@ -21,37 +21,40 @@ public class Options : MonoBehaviour {
 		Application.LoadLevel(0);
 	}
 
-	public void CheckWidth() {
-		if (widthField.text == "")
-			return;
-		width = Int32.Parse(widthField.text);
-		if (width < minWidth)
-			widthField.text = minWidth.ToString();
-		else if (width > maxWidth)
-			widthField.text = maxWidth.ToString();
-	}
-
 	public void SetWidth() {
 		if (widthField.text == "") {
-			width = 8;
-			widthField.text = width.ToString();
+			Game.Width = 8;
+			widthField.text = Game.Width.ToString ();
+			return;
+		}
+		Game.Width = Int32.Parse(widthField.text);
+		if (Game.Width < minWidth) {
+			Game.Width = minWidth;
+			widthField.text = minWidth.ToString ();
+			return;
+		}
+		if (Game.Width > maxWidth) {
+			Game.Width = maxWidth;
+			widthField.text = maxWidth.ToString ();
 		}
 	}
 
-	public void CheckHeight() {
-		if (heightField.text == "")
-			return;
-		height = Int32.Parse(heightField.text);
-		if (height < minHeight)
-			heightField.text = minHeight.ToString();
-		else if (height > maxHeight)
-			heightField.text = maxHeight.ToString();
-	}
-	
 	public void SetHeight() {
 		if (heightField.text == "") {
-			height = 8;
-			heightField.text = height.ToString();
+			Game.Height = 8;
+			heightField.text = Game.Height.ToString ();
+			return;
+		}
+		Game.Height = Int32.Parse(heightField.text);
+		if (Game.Height < minHeight) {
+			Game.Height = minHeight;
+			heightField.text = minHeight.ToString ();
+			return;
+		}
+		if (Game.Height > maxHeight) {
+			Game.Height = maxHeight;
+			heightField.text = maxHeight.ToString ();
 		}
 	}
+
 }
