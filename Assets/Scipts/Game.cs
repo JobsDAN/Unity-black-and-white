@@ -38,6 +38,7 @@ public class Game : MonoBehaviour {
 		float hCell = hBackSprite / Board.Height;
 		float x0 = backSprite.bounds.min.x;
 		float y0 = backSprite.bounds.min.y;
+		Debug.Log (Board.Width);
 		for (int i = 0; i < Board.Width; i++)
 			for (int j = 0; j < Board.Height; j++) {
 				float x = i * wCell + wCell / 2; 
