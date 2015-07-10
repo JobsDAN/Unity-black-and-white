@@ -5,7 +5,8 @@ public static class Game {
 	/* Elecent contain information about player's points */
 	public static Board Board;
 	/* Size of board */
-	public static int Width, Height;
+	public static int Width = 8;
+	public static int Height = 8;
 
 	public enum Player {None, White, Black};
 	/* Current player */

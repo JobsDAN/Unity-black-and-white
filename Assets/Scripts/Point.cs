@@ -19,6 +19,7 @@ public class Point : MonoBehaviour {
 		if (!active) {
 			active = true;
 			SpriteRenderer trigger = GetComponent <SpriteRenderer> ();
+			Debug.Log ("Test");
 			if (Game.currentPlayer == Game.Player.White) 
 				trigger.sprite = WhitePoint;
 			else
@@ -41,7 +42,4 @@ public class Point : MonoBehaviour {
 		}
 	}
 
-	// Update is called once per frame
-	void Update () {
-	}
 }
